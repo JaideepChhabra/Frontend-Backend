@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hands on QDR Page2</title>
+        <link rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+         crossorigin="anonymous">"
+         <style>
+            .custom-button{
+                 padding-top: 10px;
+                 padding-bottom: 10px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 border-radius: 23px;
+                 width: 95%;
+                 font-size: 17px;
+            }
+            .option-button{
+                 padding-top: 7px;
+                 padding-bottom: 7px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 background-color: #1b0448;
+                 border: #b0dc01 2px solid;
+                 color: #b0dc01;
+                 width: 95%;  
+                 font-size: 17px;
+            }
+            .li-class{
+                list-style: none;
+                font-size: 17px;
+            }
+
+            .li-class:before {
+            content:"➣";
+            font-size:19px;
+            padding-right: 5px;
+            }
+         </style>
+    </head>
+    <body style="background: #1b0448;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" style="color: white;">
+                    <div style="font-size: 19px;padding-left: 7px;"><a style="color: white;" href="Page1.html">🠠 Back</a></div>
+                    <div class="text-center py-2 mt-4" style="font-size: 22px;margin-left: -15px; background-color: #451c94;color: white;"><b>Steps to play</b></div>
+                    <div style="color: white;">
+                        <ul>
+                            <li class="li-class mt-4">Choose one of the Labels provided on
+                                <p style="padding-left: 23px;">the right.<br>(For eg: Sun, Flower, Umbrella)</p>
+                            </li>
+                            <li class="li-class mt-4">Draw inside the given Canvas area.</li>
+                            <li class="li-class mt-4">Press 'Confirm Selection'.</li>
+                            <li class="li-class mt-4">If you make a mistake while drawing,
+                                <p style="padding-left: 23px;">press 'Clear Selection'.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+                <div class="col-md-6 text-center pt-3 pl-5 pr-5">
+                    <h2 style="background-color:white; padding-top: 8px;padding-bottom: 4px;margin-left: 1px;margin-right: 1px; color:#1b0448">Draw Inside this Canvas</h2>
+                    <div class="row text-center px-3" style="margin-top: -8px;">
+                        <canvas id="mycanvas" width="300px" height="300px" style="background-color: white;
+                        border: 3px solid green;"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center" >
+                    <div class="text-center py-2" style="font-size: 22px;margin-right: -15px;margin-top: 50px; background-color: #451c94;color: white;"><b>Choose from the Labels</b></div>
+                    <div>
+                        <button class="option-button mt-3"><b>Sun</b></button>
+                    </div>
+                    <div>
+                        <button class="option-button mt-3"><b>Flower</b></button>
+                    </div>
+                    <div>
+                        <button class="option-button mt-3"><b>Pencil</b></button>
+                    </div>
+                    <div>
+                        <button class="option-button mt-3"><b>Umbrella</b></button>
+                    </div>
+                    <div>
+                        <button class="option-button mt-3"><b>House</b></button>
+                    </div>
+                    <div>
+                        <button class="option-button mt-3"><b>Spoon</b></button>
+                    </div>
+                    <div>
+                        <button class="custom-button mt-4" style="background-color: #b0dc01; color:#1b0448"><b>Confirm Selection</b></button>
+                    </div>
+                    <div>
+                        <button class="custom-button mt-3" style="background-color:#e84646;color: white;"><b>Clear Canvas</b></button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <script src="script.js">
+
+        </script>
+    </body>
+</html>
